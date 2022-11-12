@@ -13,10 +13,13 @@ In a **weighted graph**, every edge has a weight associated with it that represe
 Look at the edges cost that show on the picture below.
 ![A wighted graph](assets/a_wighted_graph.png)
 Here is distance table of cities
+```text
 | Table     | Tabriz | Ardebil | Tehran
 | Tabriz    |   0    | 217 KM  | 614 KM
 | Ardebil   | 217 KM |    0    | 573 KM
 | Tehran    | 614KM  | 573 KM  |    0
+```
+
 
 The weight associated with each edge is distance between these cites. Using this network , you can determine the shortest routes for faster delivery of your values to your precious customers.
 
@@ -193,9 +196,11 @@ void main() {
 }
 ```
 After running above code we get the following output:
-`Tehran --> Tabriz, Ardebil
+```text
+Tehran --> Tabriz, Ardebil
 Tabriz --> Tehran, Ardebil
-Ardebil --> Tehran, Tabriz`
+Ardebil --> Tehran, Tabriz
+```
 This output shows a visual description of an adjacency list graph.We can see all the distance or wight from any city.
 We can also obtain other helpful information such as the distance from Tehran to Tabriz.This is the weight of the edge between those two vertices.
 ```dart
@@ -211,12 +216,12 @@ Another use case is to know all the available destinations from Tehran, for this
   }
 ```
 Running that will display the destinations in output.
-`
+```text
 Tehran destinations are :
 ------------------
 Tehran to Tabriz
 Tehran to Ardebil
-`
+```
 ### Adjacency Matrix Implementation
 An *adjacency matrix* uses a two-dimensional grid or table to implement the graph data structure. Each vertex has its own row and column in the table. The cell where rows and columns intersect hold the edge weights.If any particular cell is empty, that is, if the weight is null, then that means there is no edge between the row vertex and the column vertex.
 Bellow is an example of a directed graph that depicts a distance network between cities. As before the weight represents the distance between cities.
@@ -378,7 +383,7 @@ void main(){
 }
 ```
 and then the output is :
-`
+```text
 Index | Data
 0        Elam
 1        Yazd
@@ -391,12 +396,14 @@ Index | Data
 .     623.0 .     .     573.0
 .     .     217.0 573.0 .
 
+
+
 The distance between Tehran to Tabriz is null Km
 Tehran destinations are :
 ------------------
 Tehran to Yazd
 Tehran to Ardebil
-`
+```
 ## Fastest common operation
 This chart compares the cost of different graph operations for adjacency lists and adjacency matrices. **V** represents the number of vertices and **E** represents the number of edges.
 ![graph_analysis](assets/graph_analysis.png)
