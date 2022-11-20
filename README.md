@@ -1,6 +1,6 @@
-# a_sample_project
+# a_graph_project
 
-fastest graph implementation with test driven approch (multy platform Web, Android, ios ..)
+Fastest graph implementation with test driven approch (multy platform Web, Android, ios ..)
 ## Structure
 one abstract class , 2 implementation of graph , make api for fastest operation with one of design pattern(suitable one) , show graph on screen
 ## Graph
