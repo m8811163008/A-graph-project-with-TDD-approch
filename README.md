@@ -1,4 +1,4 @@
-# a_graph_project
+# A graph project with TDD approch
 
 Fastest graph implementation with test driven approch (multy platform Web, Android, ios ..)
 ## Structure
